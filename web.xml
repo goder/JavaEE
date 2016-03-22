@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>JEE</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+		<!-- servlet start -->
+	  	<servlet>			
+			<servlet-name>Servlet_Hello</servlet-name>			
+			<servlet-class>com.bj.servlet.Servlet_Hello</servlet-class>		
+		</servlet>		
+		<servlet-mapping>		
+			<servlet-name>Servlet_Hello</servlet-name>		
+			<url-pattern>/Servlet_Hello</url-pattern>
+		</servlet-mapping>
+		<!--servlet end  -->
+		
+		<!-- servlet start -->
+		<servlet>			
+			<servlet-name>GenericServlet_Hello</servlet-name>			
+			<servlet-class>com.bj.servlet.GenericServlet_Hello</servlet-class>		
+		</servlet>		
+		<servlet-mapping>		
+			<servlet-name>GenericServlet_Hello</servlet-name>		
+			<url-pattern>/GenericServlet_Hello</url-pattern>
+		</servlet-mapping>
+		<!--servlet end  -->
+		
+		<!-- servlet start -->
+		<servlet>			
+			<servlet-name>HttpServlet_Hello</servlet-name>			
+			<servlet-class>com.bj.servlet.HttpServlet_Hello</servlet-class>		
+		</servlet>		
+		<servlet-mapping>		
+			<servlet-name>HttpServlet_Hello</servlet-name>		
+			<url-pattern>/HttpServlet_Hello</url-pattern>
+		</servlet-mapping>
+		<!--servlet end  -->
+	
+</web-app>
